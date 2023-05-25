@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de asistencia</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-header">
+          <h1>Registro de asistencia</h1>
+        </div>
+        <div class="container-body">
+          <h2>Formulario de registro</h2>
+          <fieldset>
+            <legend>Registro de asistencia</legend>
+            <form action="index.html" method="post" name="registro">
+              <label for="name">Nombre completo</label>
+              <input type="text" id="name" placeholder="Nombre completo" /><br />
+              <label for="emai">email</label>
+              <input type="email" id="email" placeholder="email" /><br />
+              <label for="edad">Edad</label>
+              <input type="number" id="edad" placeholder="edad"><br>
+              <label for="telefono">Teléfono</label>
+              <input type="number" id="telefono" placeholder="número de teléfono"><br>
+              <label for="direccion">Dirección</label>
+              <input type="text" id="direccion" placeholder="Dirección"><br>
+              <label for="ocupacion">Ocupación</label>
+              <select name="ocupacion" id="ocupacion">
+                <option value="0"></option>
+                <option value="1">Estudiante</option>
+                <option value="2">Profesor</option>
+                <option value="3">Desarrollador</option>
+              </select>
+              <br />
+              <p>
+                Talla
+                <input type="radio" name="talla" value="S" />S
+                <input type="radio" name="talla" value="M" />M
+                <input type="radio" name="talla" value="L" />L
+                <input type="radio" name="talla" value="XL" />XL
+              </p>
+              <p>¿Tienes alguna preferencia de comida?</p>
+              <input
+                type="checkbox"
+                name="preferencia"
+                id="preferencia"
+              />Vegetariano
+              <input type="checkbox" name="preferencia" id="preferencia" />Vegano
+              <input type="checkbox" name="preferencia" id="preferencia" />Sin
+              gluten
+              <input type="checkbox" name="preferencia" id="preferencia" />Sin
+              restricciones <br />
+              <p>
+                  ¿Eres alérgico a algún alimento?
+                  <input type="radio" name="alergia" value="S" />Si
+                  <input type="radio" name="alergia" value="N" />No
+                  ¿Cuál?
+                  <input type="text" id="alergia">
+                </p>
+              <input type="submit" id="submit" />
+            </form>
+          </fieldset>
+        </div>
+        <div class="container-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, necessitatibus veritatis! Saepe ab sapiente tempora voluptatem quo eos, harum totam minus deleniti aperiam tempore quia aut accusamus animi nihil. Labore!</div>
+      </div>
+</body>
+</html>
